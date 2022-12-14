@@ -1,0 +1,55 @@
+.noAutocomplete {
+  color: #999;
+  margin: 8px;
+}
+
+.container {
+  position: relative;
+}
+
+.clear {
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: darkgray;
+}
+
+.absolute {
+  position: absolute;
+  bottom: -20px;
+  color: red;
+}
+
+.autocomplete {
+  position: absolute;
+  border: 1px solid #999;
+  border-top-width: 0;
+  max-height: 209px;
+  overflow-y: auto;
+  background-color: #f8f8f8;
+  width: 100%;
+  border-radius: 10px;
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.autocomplete li {
+  list-style: none;
+  padding: 8px;
+}
+.autocomplete > .active,
+.autocomplete li:hover {
+  background-color: darkgray;
+  cursor: pointer;
+  font-weight: 700;
+}
+.autocomplete li:not(:last-of-type) {
+  border-bottom: 1px solid #999;
+}
